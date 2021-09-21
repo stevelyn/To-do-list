@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+body {
+    margin: 0 auto;
+    padding: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background-color: rgb(255, 219, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-name {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    max-height: 50px;
+}
+
+.addTask {
+    margin-bottom: 20px;
+}
+
+#adderTask {
+    border-style: none;
+    outline: none;
+    width: 400px;
+    height: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px; 
+}
+
+.addBtn {
+    border-style: none;
+    outline: none;
+    width: 100px;
+    height: 42px;
+    background-color: rgb(240, 190, 27);
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: rgb(253, 196, 9);
+}
+
+#myTasks{
+    margin-top: 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    font-size: 35px;
+    background-color: rgb(255, 219, 100);
+    color: white;
+}
+
+.task{
+    margin: 0px;
+    width: 100%;
+}
+
+ul li:hover {
+    background-color: rgb(252, 227, 147);
+}
+
+ul li:nth-child(odd):hover {
+    background-color: rgb(252, 227, 147);
+}
+
+ul li:nth-child(odd) {
+    background-color: rgb(240, 190, 27);
+}
+
+.checked {
+    background-color: rgb(255, 227, 134);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.commandBtns{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.editBtn{
+    outline: none;
+    border-style: none;
+    background-color: rgb(253, 196, 9);
+}
+
+.deleteBtn{
+    outline: none;
+    border-style: none;
+    background-color: rgb(199, 152, 0);
+}
+
+.btnDeleteAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.deleteTask{
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(218, 169, 8);
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.deleteBtn:hover, .deleteTask:hover {
+    background-color: #f44336;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 219, 100);
+    color: white;
+}
